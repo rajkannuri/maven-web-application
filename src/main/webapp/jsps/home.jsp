@@ -38,7 +38,7 @@ out.println("Server Host Name :: "+inetAddress.getHostName());
 		<img src="images/mithunlogo.jpg" alt="" width="100">
 	</span>
 	<span style="font-weight: bold;">
-		Mithun Technologies, 
+		RAJJ KANNURI, 
 		Marathahalli,
 		Bengaluru,
 		+91 9980923216 and 
