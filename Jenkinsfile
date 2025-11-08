@@ -1,12 +1,12 @@
-	node{
+	node{ 
+	def mavenHome = tool name: 'maven 399'
+
 	 echo "Here is the Node name: ${env.NODE_NAME}"
 	 echo "Here is the Jenkins url name: ${env.JENKINS_URL}"
 	 echo "Here is the build display name: ${env.BUILD_DISPLAY_NAME}"
 	echo "Here is the build number: ${env.BUILD_NUMBER}"
-	echo "Here is the build id: ${env.BUILD_ID}"   
-	
-	def mavenHome = tool name: 'maven 399'
-	
+	echo "Here is the build id: ${env.BUILD_ID}"  
+		
 	stage('CheckOutCode'){
 	git branch: 'development', url: 'https://github.com/rajkannuri/maven-web-application.git'
 	}
