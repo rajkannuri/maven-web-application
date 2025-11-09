@@ -6,7 +6,7 @@
 	 echo "Here is the build display name: ${env.BUILD_DISPLAY_NAME}"
 	echo "Here is the build number: ${env.BUILD_NUMBER}"
 	echo "Here is the build id: ${env.BUILD_ID}"  
-		
+	properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '2', daysToKeepStr: '', numToKeepStr: '2')), pipelineTriggers([pollSCM('* * * * *')])])	
 	stage('CheckOutCode'){
 	git branch: 'development', url: 'https://github.com/rajkannuri/maven-web-application.git'
 	}
